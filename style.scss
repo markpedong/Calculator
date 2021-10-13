@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container{
+    background-color: #b90000;
+    width: 300px;
+    min-height: 300px;
+    padding: 5px;
+    display: block;
+    border-radius: 25px;
+    
+    /* position the div in center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
