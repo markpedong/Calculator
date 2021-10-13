@@ -19,4 +19,3 @@ function divide(){
     sumTotal.textContent = `${"Sum: "} ${num1 / num2} `
 }
 // Calculator
-3123123123123123123123
