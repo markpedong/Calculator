@@ -1,21 +1,274 @@
 body {
   margin: 0;
   padding: 0;
-  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins';
+}
+
+section {
+  background-color: #636363;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
-  background-color: #b90000;
-  width: 300px;
-  min-height: 300px;
-  padding: 5px;
+  width: 100%;
+  max-width: 350px;
+  background-color: #181410;
+  border-radius: 1.8em;
+  border-style: solid;
+  border-color: white;
+  overflow: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FB7F17;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.title {
+  margin-left: 30px;
+}
+
+.img {
+  max-width: 28px;
+  margin-right: 18px;
+}
+
+#display {
+  width: 94%;
+  text-align: right;
+  margin-top: 65px;
+  margin-right: 108px;
+  color: white;
+  font-size: 22px;
+}
+
+.answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+}
+
+.answers .equals {
+  pointer-events: none;
   display: block;
-  border-radius: 25px;
-  /* position the div in center */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+}
+
+.all-buttons .button-size {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+      grid-template-areas: ". . . ." "seven eight nine minus" "four five six plus" "one two three equal" "zero decimal clear equal";
+  background-color: #3B3730;
+  border-radius: 1.8em;
+  text-align: center;
+  padding: 40px 40px 0px 40px;
+}
+
+.buttonBlack {
+  background-color: #181410;
+  color: #FB7F17;
+  border-radius: 0.7em;
+  -webkit-box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+          box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.buttonBlack:hover {
+  background-color: rgba(36, 36, 36, 0.514);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.buttonGrey {
+  background-color: #2E2E2E;
+  color: #ffffff;
+  border-radius: 0.7em;
+  -webkit-box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+          box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.buttonGrey:hover {
+  background-color: #1d1919;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.buttonEquals {
+  background-color: #FB7F17;
+  color: #ffffff;
+  border-radius: 0.7em;
+  -webkit-box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+          box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  width: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.buttonEquals:hover {
+  background-color: #f55f28;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+[data-key="1"] {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+[data-key="2"] {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+[data-key="3"] {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+[data-key="4"] {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+[data-key="5"] {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+[data-key="6"] {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+[data-key="7"] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+[data-key="8"] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+[data-key="9"] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+[data-key="0"] {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: zero;
+}
+
+.decimal {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: decimal;
+}
+
+.clear {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: clear;
+}
+
+[data-key="equal"] {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: equal;
+}
+
+[data-key="minus"] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: minus;
+}
+
+[data-key="plus"] {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: plus;
 }
 /*# sourceMappingURL=style.css.map */

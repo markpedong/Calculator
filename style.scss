@@ -1,20 +1,212 @@
 body{
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
   }
+
+html{
+  font-family: 'Poppins';
+}
+
+section{
+  background-color: #636363;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 350px;
+  background-color: #181410;
+  border-radius: 1.8em;
+  border-style: solid;
+  border-color: white;
+  overflow: hidden;
+}
+
+header{
+  display: flex;                  
+  justify-content: space-between;
+  color: #FB7F17;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+
+}
+.title{
+  margin-left: 30px;
+}
+
+.img{
+  max-width: 28px;
+  margin-right: 18px;
+}
+
+#display{
+
+  width:94%;
+  text-align: right;
+  margin-top: 65px;
+  margin-right: 108px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+
+}
+
+.answers{
+  display: flex;                  
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+}
+
+.answers .equals{
+  pointer-events: none;
+  display: block;
+}
+
+.all-buttons .button-size {
+  display: grid;
+  // grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas:
+    ". . . ."
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero decimal clear equal";
+
+
+  background-color: #3B3730;
+  border-radius: 1.8em;
+  text-align: center;
+  padding: 40px 40px 0px 40px;
+
+}
+
+.buttonBlack{
+  background-color: #181410;
+  color: #FB7F17;
+  border-radius: 0.7em; 
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.buttonBlack:hover{
+  background-color: rgba(36, 36, 36, 0.514);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.buttonGrey{
+  background-color: #2E2E2E;
+  color: #ffffff;
+  border-radius: 0.7em;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.buttonGrey:hover{
+  background-color: rgb(29, 25, 25);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.buttonEquals{
+  background-color: #FB7F17;
+  color: #ffffff;
+  border-radius: 0.7em;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
   
-  .container{
-    background-color: #b90000;
-    width: 300px;
-    min-height: 300px;
-    padding: 5px;
-    display: block;
-    border-radius: 25px;
-    
-    /* position the div in center */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+}
+
+.buttonEquals:hover{
+  background-color: rgb(245, 95, 40);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+ 
+[data-key="1"] {
+  grid-area: one;
+}
+
+[data-key="2"] {
+  grid-area: two;
+}
+
+[data-key="3"] {
+  grid-area: three;
+}
+
+[data-key="4"] {
+  grid-area: four;
+}
+
+[data-key="5"] {
+  grid-area: five;
+}
+
+[data-key="6"] {
+  grid-area: six;
+}
+
+[data-key="7"] {
+  grid-area: seven;
+}
+
+[data-key="8"] {
+  grid-area: eight;
+}
+
+[data-key="9"] {
+  grid-area: nine;
+}
+
+[data-key="0"] {
+  grid-area: zero;
+}
+.decimal {
+  grid-area: decimal;
+}
+.clear {
+  grid-area: clear;
+}
+
+[data-key="equal"] {
+  grid-area: equal;
+}
+
+[data-key="minus"] {
+  grid-area: minus;
+}
+
+[data-key="plus"] {
+  grid-area: plus;
+}
