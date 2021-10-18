@@ -9,7 +9,7 @@ html{
 }
 
 section{
-  background-color: #636363;
+  background-image: linear-gradient(to left, #000000, #441d22, #863330, #B7410E, #fb7f17);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -44,15 +44,15 @@ header{
   margin-right: 18px;
 }
 
-#display{
+.display{
 
   width:94%;
   text-align: right;
   margin-top: 65px;
   margin-right: 108px;
   color: rgb(255, 255, 255);
-  font-size: 22px;
-
+  font-size: 20px;
+  opacity: 0.6;
 }
 
 .answers{

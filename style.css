@@ -10,7 +10,8 @@ html {
 }
 
 section {
-  background-color: #636363;
+  background-image: -webkit-gradient(linear, right top, left top, from(#000000), color-stop(#441d22), color-stop(#863330), color-stop(#B7410E), to(#fb7f17));
+  background-image: linear-gradient(to left, #000000, #441d22, #863330, #B7410E, #fb7f17);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,13 +56,14 @@ header {
   margin-right: 18px;
 }
 
-#display {
+.display {
   width: 94%;
   text-align: right;
   margin-top: 65px;
   margin-right: 108px;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
+  opacity: 0.6;
 }
 
 .answers {

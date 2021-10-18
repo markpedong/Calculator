@@ -24,34 +24,36 @@
                 <div class="title">calculator</div>
                 <img src="./sunny.svg" alt="darkMode" class="img">
             </header>
-            <div id="display">
-                <div class="number">0</div>
+            <div class="display">
+                <div data-previous-operand>1</div>
+                
             </div>
             <div class="answers">
-                <div class="equals" style="pointer-events: none;" >=</div>
-                <div class="temp-result"></div>
+                <div class="equals">=</div>
+                <div data-current-operand>1</div>
             </div>
+            
             <div class="all-buttons">
                 <div class="button-size">
-                    <div class="buttonBlack" data-type="clear">C</div>
-                    <div class="buttonBlack" data-type="clearEverything">CE</div>
-                    <div class="buttonBlack" data-key="times" data-type="operator">&times;</div>
-                    <div class="buttonBlack"data-key="divide" data-type="operator">÷</div>
-                    <div class="buttonGrey" data-key="7" data-type="number">7</div>
-                    <div class="buttonGrey" data-key="8" data-type="number">8</div>
-                    <div class="buttonGrey" data-key="9" data-type="number">9</div>
-                    <div class="buttonBlack" data-key="minus" data-type="operator">-</div>
-                    <div class="buttonGrey" data-key="4" data-type="number">4</div>
-                    <div class="buttonGrey" data-key="5" data-type="number">5</div>
-                    <div class="buttonGrey" data-key="6" data-type="number">6</div>
-                    <div class="buttonBlack" data-key="plus" data-type="operator">+</div>
-                    <div class="buttonGrey" data-key="1" data-type="number">1</div>
-                    <div class="buttonGrey" data-key="2" data-type="number">2</div>
-                    <div class="buttonGrey" data-key="3" data-type="number">3</div>
-                    <div class="buttonEquals" data-key="equal" data-type="equal">=</div>
-                    <div class="buttonBlack" data-key="remainder" data-type="remainder">%</div>
-                    <div class="buttonBlack" data-key="0" data-type="number">0</div>
-                    <div class="buttonBlack" data-type="number">.</div>
+                    <button class="buttonBlack" data-delete>C</button>
+                    <button class="buttonBlack" data-all-clear>CE</button>
+                    <button class="buttonBlack" data-key="times" data-operation>&times;</button>
+                    <button class="buttonBlack"data-key="buttonide" data-operation>÷</button>
+                    <button class="buttonGrey" data-key="7" data-number>7</button>
+                    <button class="buttonGrey" data-key="8" data-number>8</button>
+                    <button class="buttonGrey" data-key="9" data-number>9</button>
+                    <button class="buttonBlack" data-key="minus" data-operation>-</button>
+                    <button class="buttonGrey" data-key="4" data-number>4</button>
+                    <button class="buttonGrey" data-key="5" data-number>5</button>
+                    <button class="buttonGrey" data-key="6" data-number>6</button>
+                    <button class="buttonBlack" data-key="plus" data-operation>+</button>
+                    <button class="buttonGrey" data-key="1" data-number>1</button>
+                    <button class="buttonGrey" data-key="2" data-number>2</button>
+                    <button class="buttonGrey" data-key="3" data-number>3</button>
+                    <button class="buttonEquals" data-key="equal" data-equals>=</button>
+                    <button class="buttonBlack" data-key="remainder" data-operation>%</button>
+                    <button class="buttonBlack" data-key="0" data-number>0</button>
+                    <button class="buttonBlack" data-key="dot" data-number>.</button>
                 </div>
             </div>
         </div>
