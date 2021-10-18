@@ -51,10 +51,6 @@ class Calculator {
             case '÷':
                 computation = prev / current
                 break;
-
-            case '%':
-              computation = prev % current
-              break;
         
             default:
                 return;
@@ -136,15 +132,3 @@ deleteButton.addEventListener('click', button => {
     calculator.updateDisplay()
 }) 
     
-// Light theme mode
-
-var icon = document.getElementById("icon");
-
-icon.onclick = () => {
-  document.body.classList.toggle("dark-theme")
-  if (document.body.classList.contains("dark-theme")) {
-    icon.src = "./lightmode.svg" 
-  } else {
-    icon.src = "./darkmode.svg"
-  }
-}

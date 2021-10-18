@@ -4,37 +4,12 @@ body{
     box-sizing: border-box;
   }
 
-:root {
-  
-
-  --black-color: #f9f9f9;  
-  --gray-color: #DBDBDB;  
-  --white-color: #000000;
-  --button-gray: #DEDEDE;
-  --background-color: linear-gradient(to left, #ececec, #ececec, #ececec, #ececec, #ececec);  
-  --box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.548);  
-}
-
-.dark-theme{
-  --black-color: #181410;  
-  --gray-color: #3B3730;  
-  --white-color: #ffffff;
-  --button-gray: #2E2E2E;
-  --background-color: linear-gradient(to left, #000000, #441d22, #863330, #B7410E, #fb7f17);  
-  --box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
-}
-
-// .light-theme{
- 
-// }
-
-
 html{
   font-family: 'Poppins';
 }
 
 section{
-  background-image: var(--background-color);
+  background-image: linear-gradient(to left, #000000, #441d22, #863330, #B7410E, #fb7f17);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -43,14 +18,12 @@ section{
 
 .container{
   width: 100%;
-  height: auto;
   max-width: 350px;
-  background-color: var(--black-color);
+  background-color: #181410;
   border-radius: 1.8em;
   border-style: solid;
-  border-color: var(--white-color);
+  border-color: white;
   overflow: hidden;
-  
 }
 
 header{
@@ -60,17 +33,15 @@ header{
   padding-top: 10px;
   text-transform: uppercase;
   font-size: 20px;
-  
-  
+
 }
 .title{
   margin-left: 30px;
 }
 
 .img{
-  max-width: 15px;
+  max-width: 28px;
   margin-right: 18px;
-  cursor: pointer;
 }
 
 .display{
@@ -79,16 +50,16 @@ header{
   text-align: right;
   margin-top: 65px;
   margin-right: 108px;
-  color: var(--white-color);
-  font-size: 22px;
-  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  opacity: 0.6;
 }
 
 .answers{
   display: flex;                  
   justify-content: space-between;
-  color: var(--white-color);
-  font-size: 30px;
+  color: #ffffff;
+  font-size: 25px;
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 15px;
@@ -111,18 +82,18 @@ header{
     "zero decimal clear equal";
 
 
-  background-color: var(--gray-color);
+  background-color: #3B3730;
   border-radius: 1.8em;
   text-align: center;
-  padding: 60px 40px 0px 40px;
-  font-size: 18px;
+  padding: 40px 40px 0px 40px;
+
 }
 
 .buttonBlack{
-  background-color: var(--black-color);
+  background-color: #181410;
   color: #FB7F17;
   border-radius: 0.7em; 
-  box-shadow: var(--box-shadow);
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,10 +109,10 @@ header{
   cursor: pointer;
 }
 .buttonGrey{
-  background-color: var(--button-gray);
-  color: var(--white-color);
+  background-color: #2E2E2E;
+  color: #ffffff;
   border-radius: 0.7em;
-  box-shadow: var(--box-shadow);
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,9 +130,9 @@ header{
 
 .buttonEquals{
   background-color: #FB7F17;
-  color: var(--white-color);
+  color: #ffffff;
   border-radius: 0.7em;
-  box-shadow: var(--box-shadow);
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,8 +140,9 @@ header{
   width: 50px;
   margin: auto;
   margin-bottom: 20px;
-  font-weight: bolder;
-
+  position: relative;
+  z-index: 1;
+  
 }
 
 .buttonEquals:hover{
